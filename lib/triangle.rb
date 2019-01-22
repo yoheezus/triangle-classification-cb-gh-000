@@ -21,8 +21,8 @@ class Triangle
 
   def validate_tri
       valid = [(a + b > c), (a + c > b), (b + c > a)]
-      [a, b, c].each { |s| real_triangle << false if s <= 0 }
-      if real_triangle.include?(false)
+      [a, b, c].each { |s| valid << false if s <= 0 }
+      if valid.include?(false)
           begin
               raise TriangleError
           rescue TriangleError => error
