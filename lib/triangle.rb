@@ -15,8 +15,9 @@ class Triangle
       if @all_sides.any? {|i| i == 0}
           begin
               raise TriangleError
-          rescue PartnerError => error
-              puts error.message 
+          rescue TriangleError => error
+              puts error.message
+          end
       else
           if @all_sides.uniq.length == 1
               :equilateral
