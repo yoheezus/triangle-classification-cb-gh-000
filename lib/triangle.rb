@@ -12,7 +12,6 @@ class Triangle
   def kind
       if @all_sides.include?(0) || (@all_sides[0] + @all_sides[1]) < @all_sides[2]
               raise TriangleError
-          end
       else
           if @all_sides.uniq.length == 1
               :equilateral
