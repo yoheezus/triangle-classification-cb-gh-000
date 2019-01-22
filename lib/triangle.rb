@@ -12,7 +12,7 @@ class Triangle
   end
 
   def kind
-      if @all_sides.any? {|i| i == 0} || @all_sides[0] + @all_sides[1] <= @all_sides[2]
+      if @all_sides.any? {|i| i == 0} || (@all_sides[0] + @all_sides[1]) <= @all_sides[2]
           begin
               raise TriangleError
           rescue TriangleError => error
