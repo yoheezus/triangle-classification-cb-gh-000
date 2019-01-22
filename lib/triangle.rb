@@ -17,7 +17,6 @@ class Triangle
       else
           :scalene
       end
-
   end
 
   def validate_tri
@@ -31,7 +30,6 @@ class Triangle
           end
       end
   end
-
 
   class TriangleError < StandardError
       def message
