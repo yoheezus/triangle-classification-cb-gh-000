@@ -32,7 +32,7 @@ class Triangle
 
   class TriangleError < StandardError
       def message
-          puts "No good, you reached error"
+          puts "This is not a valid Triangle!"
       end
   end
 end
